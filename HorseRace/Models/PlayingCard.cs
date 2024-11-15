@@ -4,10 +4,12 @@ using Microsoft.AspNetCore.WebUtilities;
 namespace HorseRace.Models
 {
     public class PlayingCard
+
     {
         [Range(2, 13)]
         public Values Value { get; set; }
         public Suits Suit { get; set; }
+
 
         public PlayingCard(Values value, Suits suit)
         {
@@ -15,6 +17,7 @@ namespace HorseRace.Models
             Suit = suit;
         }
     }
+
 
     /// <summary>
     /// Suits of Cards
@@ -25,6 +28,7 @@ namespace HorseRace.Models
         Spades = 2,
         Diamonds = 3,
         Clubs = 4,
+
     }
 
     /// <summary>
@@ -32,6 +36,7 @@ namespace HorseRace.Models
     /// </summary>
     public enum Values
     {
+        
         Two = 2,
         Three,
         Four,
@@ -44,5 +49,6 @@ namespace HorseRace.Models
         Jack,
         Queen, 
         King,
+
     }
 }
