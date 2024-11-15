@@ -6,8 +6,14 @@ namespace HorseRace.Models
     public class PlayingCard
     {
         [Range(2, 13)]
-        public Values value { get; set; }
+        public Values Value { get; set; }
         public Suits Suit { get; set; }
+
+        public PlayingCard(Values value, Suits suit)
+        {
+            Value = value;
+            Suit = suit;
+        }
     }
 
     /// <summary>

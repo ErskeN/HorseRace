@@ -7,12 +7,12 @@ namespace HorseRace.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        public Deck CardDeck { get; set; } = new Deck();
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
-
         public IActionResult Index()
         {
             return View();
