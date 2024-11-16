@@ -20,3 +20,29 @@ html {
 body {
   margin-bottom: 60px;
 }
+    .start-button {
+        position: absolute;
+        top: 100px;
+        right: 60px;
+    }
+    .player-horses {
+        position: absolute;
+        bottom: 200px;
+        left: 400px;
+        display: flex;
+        gap: 100px
+    }        
+    .AddPlayers {
+        position: absolute;
+        bottom: 800px
+    }
+    .Suit {
+        position: absolute;
+        top: 150px
+    }
+    .pot-counter {
+        position: absolute;
+        bottom: 120px
+        
+
+    }

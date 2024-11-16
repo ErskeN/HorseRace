@@ -4,7 +4,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HorseRace.Models
 {
-    public class Player
+	public enum Suit
+	{
+		Spades,    // ♠
+		Diamonds,  // ♦
+		Clubs,     // ♣
+		Hearts     // ♥
+	}
+	public class Player
     {
         public string Name { get; set; }
         public Player(string name)
